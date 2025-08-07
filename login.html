@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Nike</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f00;
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #f00;
+    }
+
+    .login-container p {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-container a {
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container a:hover {
+      color: #f00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Inicia Sesión - Nike</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form action="#" method="post">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Entrar">
+    </form>
+    <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nike, Inc. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

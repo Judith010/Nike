@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos - Nike</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f00;
+    }
+
+    .productos {
+      padding: 40px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .productos h2 {
+      margin-bottom: 30px;
+    }
+
+    .productos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .producto {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      background-color: #f9f9f9;
+      transition: transform 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .producto h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .precio {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .producto button {
+      padding: 10px 20px;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .producto button:hover {
+      background-color: #f00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .productos-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda Oficial Nike</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <section class="productos" id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="https://th.bing.com/th/id/R.8d8b06ab0d01114b7a604232f21ce363?rik=LxjkedmVco4Bew&pid=ImgRaw&r=0" alt="Nike Air Max 90">
+        <h3>Nike Air Max 90</h3>
+        <p class="precio">$2,499 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://i8.amplience.net/i/jpl/jd_030664_a?qlt=92" alt="Nike Air Force 1">
+        <h3>Nike Air Force 1</h3>
+        <p class="precio">$2,199 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://www.lesitedelasneaker.com/wp-content/images/2022/10/preview-air-jordan-1-mid-university-blue-dv1302-400-pic01.jpeg" alt="Air Jordan 1 Mid">
+        <h3>Air Jordan 1 Mid</h3>
+        <p class="precio">$3,299 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/6a3671b8-f115-44f6-9ab6-3798d55210eb/custom-nike-air-max-97-shoes-by-you.png" alt="Nike Air Max 97">
+        <h3>Nike Air Max 97</h3>
+        <p class="precio">$3,499 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://th.bing.com/th/id/R.9422f14a3b23da331a7959d8a3f2a88b?rik=Mxo8Addvw3DH%2bw&pid=ImgRaw&r=0" alt="Nike Court Royale">
+        <h3>Nike Court Royale</h3>
+        <p class="precio">$1,799 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6249d7d-3e7d-4a65-a9c2-92564918b393/NIKE+REACTX+PEGASUS+TRAIL+5.png" alt="Nike Pegasus 39">
+        <h3>Nike Pegasus 39</h3>
+        <p class="precio">$2,999 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.4mJ62uIgQ2bTUeWJZTAEBAHaFP?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nike Vomero 5">
+        <h3>Nike Vomero 5</h3>
+        <p class="precio">$3,899 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ef084b93-68e0-48ea-abf6-6210c57ca934/air-jordan-1-low-shoes-6Q1tFM.png" alt="Air Jordan 1 Low">
+        <h3>Air Jordan 1 Low</h3>
+        <p class="precio">$2,999 MXN</p>
+        <button>Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/awjogtdnqxniqqk0wpgf/air-max-270-mens-shoes-KkLcGR.png" alt="Nike Air Max 270">
+        <h3>Nike Air Max 270</h3>
+        <p class="precio">$3,199 MXN</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nike, Inc. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

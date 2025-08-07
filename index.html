@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike - Tienda de Tenis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f00;
+    }
+
+    .carousel {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+
+    .info {
+      padding: 40px;
+      background-color: #f4f4f4;
+    }
+
+    .info h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .info .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .info .content div {
+      max-width: 400px;
+    }
+
+    .info img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda Oficial Nike</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <section class="carousel">
+    <img src="https://th.bing.com/th/id/R.26d53dab4c331070cb7763d8446f17d7?rik=u4ZR4Ags5y4CEw&pid=ImgRaw&r=0" class="active" alt="Nike 1" />
+    <img src="https://th.bing.com/th/id/R.493fce528011e4136d073c8b6c747b77?rik=cp%2bFq2OwQvR4AQ&riu=http%3a%2f%2fwww.modern-notoriety.com%2fwp-content%2fuploads%2f2018%2f05%2fnike-air-force-1-100-aq3621-111-2.jpg&ehk=50KOjjNQHNSEHBKCTvU1eUxgq6SselcNXnqN7EDO0JM%3d&risl=&pid=ImgRaw&r=0" alt="Nike 2" />
+    <img src="https://tse1.mm.bing.net/th/id/OIP.dyJstFeJEp-V3F7WBcrNVwHaFS?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nike 3" />
+    <img src="https://tse2.mm.bing.net/th/id/OIP.pZvcRbqG9pTVHRXama1thwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nike 4" />
+    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/686c6611-3fed-4c26-8201-6ca8e51f326e/air-force-1-07-lv8-shoes-Blj3sx.png" alt="Nike 5" />
+  </section>
+
+  <section class="info">
+    <h2>Sobre Nike</h2>
+    <div class="content">
+      <div>
+        <p>
+          Nike, Inc. es una compañía multinacional estadounidense dedicada al diseño, desarrollo, fabricación y comercialización de equipamiento deportivo. Fundada en 1964 como Blue Ribbon Sports, cambió su nombre a Nike en 1971.
+        </p>
+        <p>
+          La misión de Nike es llevar inspiración e innovación a todos los atletas del mundo. La marca es reconocida globalmente por su calidad, innovación y estilo inconfundible.
+        </p>
+      </div>
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Logo Nike" />
+      </div>
+      <div>
+        <img src="https://gomagcdn.ro/domains/sportselect.ro/files/product/original/nike-air-force-1-07-nddc-083479.jpg" alt="Tenis Nike" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nike, Inc. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const images = document.querySelectorAll('.carousel img');
+    let index = 0;
+
+    setInterval(() => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 30000); // 30 segundos
+  </script>
+
+</body>
+</html>
